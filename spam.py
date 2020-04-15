@@ -1,12 +1,5 @@
 #!/usr/bin/python
 import requests,random,json,time,sys,os,re
-# -----------------------------------------------------------
-# Tidak ada author Untuk Sc ini kecuali ./Kitsune yg Telah Mendesign Dengan Sempurna
-# Update 26 january 2020 21:57
-# Recode!, dosa Tanggung Sendiri
-# Thanks For MyFriends, FourX, MhankBarBar, Maulana, Rexy
-# Underground Science And Termux Tutorial Group
-# ---------------------------------------------------------------
 
 # -----------------------WARNA----------------------------
 p = '\x1b[0m'
@@ -19,9 +12,7 @@ bm = '\x1b[96m'
 bgm = '\x1b[41m'
 bgp = '\x1b[47m'
 res = '\x1b[40m'
-# -------------------------------------------------------
-# Sebuah Program Python Yg Menggunakan Program Berorientasi Object
-#------------------------Classes------------------------
+
 class spam:
 		
 	def __init__(self, nomer):
@@ -104,9 +95,7 @@ class spam:
 			return f'\x1b[92mSpamm TokoTalk {self.nomer} {h}Success!'
 		else:
 			return f'\x1b[92mSpamm TokoTalk {self.nomer} {m}Fail!'
-# ------------------------------------------------------------
 
-# ---------------------------Fungsi----------------------------
 def apakah():
 	while True:
 		lan=str(input(k+'\tWant more? y/n : '+h))
@@ -206,23 +195,7 @@ def multi():
 				print()
 		time.sleep(dly)
 	apakah()
-#-------------------------Fungsi Banner-----------------------
-def logo():
-	os.system('clear')
-	auth=m+'  Author : '+k+'./kitsune'
-	# jika ingin m3namambah kan variabel dan mengubah data variabel kitsune bisa menambahkan %s menambahkan variabel terus di ubah menjjadu string, %d = mengubah data menjadi decimal , %i = mengubah data menjadi integer
-	return '''
-%s╭━┳━╭━╭━╮%s╮╲╲╲╲╲╲%s╔═╗╔═╗╔═╗╔╦╗
-%s┃┈┈┈┣▅╋▅┫┃%s╲╲╲╲╲╲%s╚═╗╠═╝╠═╣║║║
-%s┃┈┃┈╰━╰━━━━━━╮%s╲╲%s╚═╝╩  ╩ ╩╩ ╩
-%s╰┳╯┈┈┈┈┈┈┈┈┈◢▉◣%s╲%s╔═╗╔╦╗╔═╗
-%s╲┃┈┈┈┈┈┈┈┈┈┈▉▉▉%s╲%s╚═╗║║║╚═╗
-%s╲┃┈┈┈┈┈┈┈┈┈┈◥▉◤%s╲%s╚═╝╩ ╩╚═╝
-%s╲┃┈┈┈┈╭━┳━━━━╯%s╲╲%s╦ ╦╦ ╦╔═╗╔╦╗╔═╗╔═╗╔═╗╔═╗
-%s╲┣━━━━━━┫%s╲╲╲╲╲╲╲%s║║║╠═╣╠═╣ ║ ╚═╗╠═╣╠═╝╠═╝
-%s╲┃┈┈┈┈┈┈┃%s╲╲╲╲╲╲╲%s╚╩╝╩ ╩╩ ╩ ╩ ╚═╝╩ ╩╩  ╩  
-%s''' % (k,m,h,k,m,h,k,m,h,k,m,h,k,m,h,k,m,h,k,m,h,k,m,h,k,m,h,auth)
-# -----------------------------------------------------------
+
 def termux():
 	os.system('termux-contact-list > .contact')
 	po=json.loads(open('.contact','r').read())
