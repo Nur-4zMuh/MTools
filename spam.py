@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import requests,random,json,time,sys,os,re
 
-# -----------------------WARNA----------------------------
 p = '\x1b[0m'
 m = '\x1b[91m'
 h = '\x1b[92m'
